@@ -1,13 +1,13 @@
 return {
   {
     "evergarden",
-    name = "evergarden",
     lazy = false,
   },
   {
-    "lualine.nvim",
-    name = "lualine.nvim",
-    event = "UIEnter",
+    "lylla.nvim",
+    name = "lylla.nvim",
+    lazy = false,
+    deps = { "evergarden" },
   },
   {
     "artio.nvim",

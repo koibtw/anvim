@@ -7,13 +7,7 @@
 let
   inherit (lib) makeScope;
   inherit (lib.trivial) importTOML;
-  inherit (builtins)
-    baseNameOf
-    mapAttrs
-    fromJSON
-    removeAttrs
-    replaceStrings
-    ;
+  inherit (builtins) mapAttrs fromJSON replaceStrings;
 
   toml = importTOML ./nvfetcher.toml;
   sources = removeAttrs (callPackage ./_sources/generated.nix { }) [

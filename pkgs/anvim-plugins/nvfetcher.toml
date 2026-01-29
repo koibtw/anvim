@@ -1,7 +1,17 @@
-[evergarden]
+[artio-nvim]
+fetch.git = "https://codeberg.org/comfysage/artio.nvim"
+src.git = "https://codeberg.org/comfysage/artio.nvim"
+passthru.as = "artio.nvim"
+
+[evergarden-nvim]
 fetch.git = "https://codeberg.org/evergarden/nvim"
 src.git = "https://codeberg.org/evergarden/nvim"
 passthru.as = "evergarden"
+
+[lylla-nvim]
+fetch.git = "https://codeberg.org/comfysage/lylla.nvim"
+src.git = "https://codeberg.org/comfysage/lylla.nvim"
+passthru.as = "lylla.nvim"
 
 [lynn-nvim]
 fetch.git = "https://codeberg.org/comfysage/lynn.nvim"

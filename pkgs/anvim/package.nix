@@ -1,6 +1,5 @@
 {
   lib,
-  fetchFromGitea,
 
   vimPlugins,
 
@@ -59,19 +58,7 @@ wrapNeovim {
     flatten [
       patrionedPlugins.opt
 
-      evergarden-nvim
       lualine-nvim
-
-      (artio-nvim.overrideAttrs {
-        src = fetchFromGitea {
-          domain = "codeberg.org";
-          owner = "comfysage";
-          repo = "artio.nvim";
-          rev = "9cf933d7c49b998e9689bc208066e6c5cd423398";
-          hash = "sha256-8FlOkwVI573iKU00QwhepruQMkljx3bxjbo4X79DCtM=";
-        };
-      })
-
       blink-cmp
 
       indent-blankline-nvim

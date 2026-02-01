@@ -25,7 +25,7 @@ local hl_groups = {
   ["R"] = { bg = colors.blue },
   ["C"] = { bg = colors.purple },
   ["NO"] = { bg = colors.red },
-  ["Surface"] = { bg = colors.surface0, fg = colors.subtext0 }
+  ["Surface"] = { bg = colors.surface0, fg = colors.subtext0 },
 }
 
 vim
@@ -49,7 +49,7 @@ lylla.setup({
     end, {
       events = { "ModeChanged", "CmdlineEnter" },
     }),
-    {" %l:%c %p%% ", "LyllaSurface"},
+    { " %l:%c %p%% ", "LyllaSurface" },
     lylla.component(function()
       if not package.loaded["vim.diagnostic"] then
         return ""
@@ -83,9 +83,11 @@ lylla.setup({
       local filetype = vim.bo.filetype
       local filename = vim.fn.expand("%:t")
       local icon, icon_hl = icons.get("filetype", filetype)
-      local _, file_hl =  icons.get("default", "file")
+      local _, file_hl = icons.get("default", "file")
 
-      if #filename == 0 then separator = "" end
+      if #filename == 0 then
+        separator = ""
+      end
 
       if vim.bo.modified then
         modified = " [+] "

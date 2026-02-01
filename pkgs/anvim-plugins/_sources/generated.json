@@ -1,7 +1,7 @@
 {
     "artio-nvim": {
-        "cargoLocks": null,
-        "date": "2026-01-24",
+        "cargoLock": null,
+        "date": "2026-02-01",
         "extract": null,
         "name": "artio-nvim",
         "passthru": {
@@ -13,17 +13,17 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "e52e58dd9b15a6dd9843f98a7f8ae5e9f509ccdb",
-            "sha256": "sha256-EgwJ3fwywaVrkQeTX+MlwKgQvxWZScp8guKkhmarJfo=",
+            "rev": "9e9c54ed8bae53fa6458299acbc9e0c1e5c27645",
+            "sha256": "sha256-R1XFIDqALwRos8wAfKn9D5qV//ZAN1ccsVg1tC76umQ=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://codeberg.org/comfysage/artio.nvim"
         },
-        "version": "e52e58dd9b15a6dd9843f98a7f8ae5e9f509ccdb"
+        "version": "9e9c54ed8bae53fa6458299acbc9e0c1e5c27645"
     },
     "evergarden-nvim": {
-        "cargoLocks": null,
-        "date": "2026-01-26",
+        "cargoLock": null,
+        "date": "2026-01-30",
         "extract": null,
         "name": "evergarden-nvim",
         "passthru": {
@@ -35,16 +35,16 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "16d4c3f2b3d7e8fa02c1666fc4518707515dc2fe",
-            "sha256": "sha256-sPYL3+Pw9vt1SXiTNtf1SpN9en1tQwFUzXJicw7XHdk=",
+            "rev": "d809abf3c5a213bc27962ac6296196ef5126b528",
+            "sha256": "sha256-NyRgKd+Ey3ZDlbqq07Vp1ztbMWGCZdKLVrOiPoipKZE=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://codeberg.org/evergarden/nvim"
         },
-        "version": "16d4c3f2b3d7e8fa02c1666fc4518707515dc2fe"
+        "version": "d809abf3c5a213bc27962ac6296196ef5126b528"
     },
     "lylla-nvim": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2026-01-29",
         "extract": null,
         "name": "lylla-nvim",
@@ -66,7 +66,7 @@
         "version": "07d61e9e970bbe4196acfd43b214fc333396f840"
     },
     "lynn-nvim": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2026-01-04",
         "extract": null,
         "name": "lynn-nvim",

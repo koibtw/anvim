@@ -8,48 +8,48 @@
 {
   artio-nvim = {
     pname = "artio-nvim";
-    version = "9e9c54ed8bae53fa6458299acbc9e0c1e5c27645";
+    version = "7b150938c4a1af62ebce88864fe55a4afe20e96c";
     src = fetchgit {
       url = "https://codeberg.org/comfysage/artio.nvim";
-      rev = "9e9c54ed8bae53fa6458299acbc9e0c1e5c27645";
+      rev = "7b150938c4a1af62ebce88864fe55a4afe20e96c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-R1XFIDqALwRos8wAfKn9D5qV//ZAN1ccsVg1tC76umQ=";
+      sha256 = "sha256-EvDDxJh/OKJ3RsZkj0PBmt98a5TryboVrTzEz09kQGA=";
     };
     as = "artio.nvim";
-    date = "2026-02-01";
+    date = "2026-02-07";
   };
   evergarden-nvim = {
     pname = "evergarden-nvim";
-    version = "d809abf3c5a213bc27962ac6296196ef5126b528";
+    version = "1b6520624d13af69855f0a730acb74b2363ba6b9";
     src = fetchgit {
       url = "https://codeberg.org/evergarden/nvim";
-      rev = "d809abf3c5a213bc27962ac6296196ef5126b528";
+      rev = "1b6520624d13af69855f0a730acb74b2363ba6b9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-NyRgKd+Ey3ZDlbqq07Vp1ztbMWGCZdKLVrOiPoipKZE=";
+      sha256 = "sha256-+qcBDJ6awgZkz5VcQrBFLyW7T/eE3Ij64K/7V/LWrCA=";
     };
     as = "evergarden";
-    date = "2026-01-30";
+    date = "2026-02-07";
   };
   lylla-nvim = {
     pname = "lylla-nvim";
-    version = "07d61e9e970bbe4196acfd43b214fc333396f840";
+    version = "2161ad13a069ae01748af394684ec4b2e04d0da3";
     src = fetchgit {
       url = "https://codeberg.org/comfysage/lylla.nvim";
-      rev = "07d61e9e970bbe4196acfd43b214fc333396f840";
+      rev = "2161ad13a069ae01748af394684ec4b2e04d0da3";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-yv2DHzrzoEF0F1Hvy49PK+rBjptQxnNcummRm4+2RzI=";
+      sha256 = "sha256-1LAI+IpSX0grKNaNDgLXE6N1C4EQVkYsI3PYoEWZ60k=";
     };
     as = "lylla.nvim";
-    date = "2026-01-29";
+    date = "2026-02-07";
   };
   lynn-nvim = {
     pname = "lynn-nvim";

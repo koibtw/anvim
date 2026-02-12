@@ -23,18 +23,18 @@
   };
   evergarden-nvim = {
     pname = "evergarden-nvim";
-    version = "1b6520624d13af69855f0a730acb74b2363ba6b9";
+    version = "1949d2b7ed441f18e0e58cd23ac4dfdd91b332e9";
     src = fetchgit {
       url = "https://codeberg.org/evergarden/nvim";
-      rev = "1b6520624d13af69855f0a730acb74b2363ba6b9";
+      rev = "1949d2b7ed441f18e0e58cd23ac4dfdd91b332e9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-+qcBDJ6awgZkz5VcQrBFLyW7T/eE3Ij64K/7V/LWrCA=";
+      sha256 = "sha256-n40y4UTWjxZq6m1Gc8gN6S4fSbEYBCCe1JEsM9O8pdQ=";
     };
     as = "evergarden";
-    date = "2026-02-07";
+    date = "2026-02-11";
   };
   lylla-nvim = {
     pname = "lylla-nvim";

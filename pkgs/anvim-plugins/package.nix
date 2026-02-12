@@ -43,7 +43,19 @@ let
 
   generatedPlugins = mapAttrs mkPlugin sources;
 
-  madePlugins = { };
+  madePlugins = {
+    evergarden-nvim = mkPlugin "evergarden-nvim" (
+      sources.evergarden-nvim
+      // {
+        postInstall = ''
+          mkdir $target/.git
+          cat > $target/.git/HEAD <<EOF
+          ${sources.evergarden-nvim.src.rev}
+          EOF
+        '';
+      }
+    );
+  };
 
   plugins = generatedPlugins // madePlugins;
 in

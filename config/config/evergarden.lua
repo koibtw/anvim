@@ -3,7 +3,6 @@ require("evergarden").setup({
     variant = "fall",
     accent = "green",
   },
-  cache = false,
   default_integrations = false,
   integraions = {
     cmp = true,

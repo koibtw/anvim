@@ -1,7 +1,7 @@
 {
     "artio-nvim": {
         "cargoLock": null,
-        "date": "2026-02-07",
+        "date": "2026-02-10",
         "extract": null,
         "name": "artio-nvim",
         "passthru": {
@@ -13,13 +13,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "7b150938c4a1af62ebce88864fe55a4afe20e96c",
-            "sha256": "sha256-EvDDxJh/OKJ3RsZkj0PBmt98a5TryboVrTzEz09kQGA=",
+            "rev": "3c692427444c4e1e3bf35cadc44c6c74ffadd9e9",
+            "sha256": "sha256-wJtU6M9dRHm/qsrF3MEI7BNCM3TAkycMAcmNbg1KC10=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://codeberg.org/comfysage/artio.nvim"
         },
-        "version": "7b150938c4a1af62ebce88864fe55a4afe20e96c"
+        "version": "3c692427444c4e1e3bf35cadc44c6c74ffadd9e9"
     },
     "evergarden-nvim": {
         "cargoLock": null,
@@ -45,7 +45,7 @@
     },
     "lylla-nvim": {
         "cargoLock": null,
-        "date": "2026-02-07",
+        "date": "2026-02-16",
         "extract": null,
         "name": "lylla-nvim",
         "passthru": {
@@ -57,13 +57,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "2161ad13a069ae01748af394684ec4b2e04d0da3",
-            "sha256": "sha256-1LAI+IpSX0grKNaNDgLXE6N1C4EQVkYsI3PYoEWZ60k=",
+            "rev": "5daeae021b1beb4e7244102a66a8b0fcb5254ce8",
+            "sha256": "sha256-6eY7Lw4x+iGqrV6IGuk76VocDk9KifdZFpl+xlJFSkc=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://codeberg.org/comfysage/lylla.nvim"
         },
-        "version": "2161ad13a069ae01748af394684ec4b2e04d0da3"
+        "version": "5daeae021b1beb4e7244102a66a8b0fcb5254ce8"
     },
     "lynn-nvim": {
         "cargoLock": null,

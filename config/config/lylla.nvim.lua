@@ -1,12 +1,12 @@
 local modes = {
-  ["n"] = { "hello :3", "LyllaN" },
-  ["i"] = { "type >ᴗ<", "LyllaI" },
-  ["v"] = { "visual oᴗo", "LyllaV" },
-  ["V"] = { "visual OᴗO", "LyllaV" },
-  [""] = { "visual UᴗU", "LyllaV" },
-  ["R"] = { "replace -ᴗ-", "LyllaR" },
-  ["c"] = { "cmd xᴗx", "LyllaC" },
-  ["no"] = { "no ???", "LyllaNO" },
+  ["n"] = "hello :3",
+  ["i"] = "type >ᴗ<",
+  ["v"] = "visual oᴗo",
+  ["V"] = "visual OᴗO",
+  [""] = "visual UᴗU",
+  ["R"] = "replace -ᴗ-",
+  ["c"] = "cmd xᴗx",
+  ["no"] = "no ???",
 }
 
 local severities = {
@@ -16,40 +16,28 @@ local severities = {
   [4] = { "MiniIconsAzure", "" },
 }
 
-local colors = require("evergarden.colors").get()
-
-local hl_groups = {
-  ["N"] = { bg = colors.green },
-  ["I"] = { bg = colors.text },
-  ["V"] = { bg = colors.yellow },
-  ["R"] = { bg = colors.blue },
-  ["C"] = { bg = colors.purple },
-  ["NO"] = { bg = colors.red },
-  ["Surface"] = { bg = colors.surface0, fg = colors.subtext0 },
-}
-
-vim
-  .iter(pairs(hl_groups))
-  :map(function(n, v)
-    return 0,
-      string.format("Lylla%s", n),
-      { default = true, bg = v.bg or colors.base, fg = v.fg or colors.crust }
-  end)
-  :each(vim.api.nvim_set_hl)
-
 local lylla = require("lylla")
 local utils = require("lylla.utils")
+local colors = require("evergarden.colors").get()
 
 lylla.setup({
   refresh_rate = math.huge,
+  hls = {
+    normal = { fg = colors.green },
+    insert = { fg = colors.text },
+    visual = { fg = colors.yellow },
+    replace = { fg = colors.blue },
+    command = { fg = colors.purple },
+    operator = { fg = colors.red },
+  },
   modules = {
     lylla.component(function()
-      local m = modes[vim.api.nvim_get_mode().mode]
-      return { string.format(" %s ", m[1]), m[2] }
+      local _, hl = utils.get_modehl()
+      return { { section = hl }, " ", { modes[vim.api.nvim_get_mode().mode], { fg = colors.crust } }, " ", { section = false } }
     end, {
       events = { "ModeChanged", "CmdlineEnter" },
     }),
-    { " %l:%c %p%% ", "LyllaSurface" },
+    { " %l:%c %p%% ", { link = "CursorLine" } },
     lylla.component(function()
       if not package.loaded["vim.diagnostic"] then
         return ""

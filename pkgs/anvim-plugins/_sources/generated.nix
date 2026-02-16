@@ -8,18 +8,18 @@
 {
   artio-nvim = {
     pname = "artio-nvim";
-    version = "7b150938c4a1af62ebce88864fe55a4afe20e96c";
+    version = "3c692427444c4e1e3bf35cadc44c6c74ffadd9e9";
     src = fetchgit {
       url = "https://codeberg.org/comfysage/artio.nvim";
-      rev = "7b150938c4a1af62ebce88864fe55a4afe20e96c";
+      rev = "3c692427444c4e1e3bf35cadc44c6c74ffadd9e9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-EvDDxJh/OKJ3RsZkj0PBmt98a5TryboVrTzEz09kQGA=";
+      sha256 = "sha256-wJtU6M9dRHm/qsrF3MEI7BNCM3TAkycMAcmNbg1KC10=";
     };
     as = "artio.nvim";
-    date = "2026-02-07";
+    date = "2026-02-10";
   };
   evergarden-nvim = {
     pname = "evergarden-nvim";
@@ -38,18 +38,18 @@
   };
   lylla-nvim = {
     pname = "lylla-nvim";
-    version = "2161ad13a069ae01748af394684ec4b2e04d0da3";
+    version = "5daeae021b1beb4e7244102a66a8b0fcb5254ce8";
     src = fetchgit {
       url = "https://codeberg.org/comfysage/lylla.nvim";
-      rev = "2161ad13a069ae01748af394684ec4b2e04d0da3";
+      rev = "5daeae021b1beb4e7244102a66a8b0fcb5254ce8";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-1LAI+IpSX0grKNaNDgLXE6N1C4EQVkYsI3PYoEWZ60k=";
+      sha256 = "sha256-6eY7Lw4x+iGqrV6IGuk76VocDk9KifdZFpl+xlJFSkc=";
     };
     as = "lylla.nvim";
-    date = "2026-02-07";
+    date = "2026-02-16";
   };
   lynn-nvim = {
     pname = "lynn-nvim";

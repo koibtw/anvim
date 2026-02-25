@@ -12,6 +12,7 @@ return {
   {
     "artio.nvim",
     name = "artio.nvim",
+    deps = { "mini.icons" },
     lazy = false,
   },
   {

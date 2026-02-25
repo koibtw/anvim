@@ -26,7 +26,6 @@ See [`LICENSE`][LICENSE] and [`LICENSE-MIT`][LICENSE-MIT] for details.
 ## Credits
 
 - [robin] - aaaaaaaaaaaaaaaaa :3
-- [isabel] - original nix wrapper
 - [sebaguardian] - emotional support
 
 <div align="center">
@@ -40,8 +39,6 @@ See [`LICENSE`][LICENSE] and [`LICENSE-MIT`][LICENSE-MIT] for details.
 
 [evergarden]: https://evergarden.moe
 [robin]: https://codeberg.org/comfysage
-[isabel]: https://github.com/isabelroses
 [sebaguardian]: https://codeberg.org/sebaguardian
-
 [LICENSE]: ./LICENSE
 [LICENSE-MIT]: ./LICENSE-MIT

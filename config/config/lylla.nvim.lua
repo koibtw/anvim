@@ -16,9 +16,9 @@ local severities = {
   [4] = { "MiniIconsAzure", "" },
 }
 
+local colors = require("evergarden.colors").get()
 local lylla = require("lylla")
 local utils = require("lylla.utils")
-local colors = require("evergarden.colors").get()
 
 lylla.setup({
   refresh_rate = math.huge,
@@ -33,7 +33,13 @@ lylla.setup({
   modules = {
     lylla.component(function()
       local _, hl = utils.get_modehl()
-      return { { section = hl }, " ", { modes[vim.api.nvim_get_mode().mode], { fg = colors.crust } }, " ", { section = false } }
+      return {
+        { section = hl },
+        " ",
+        { modes[vim.api.nvim_get_mode().mode], { fg = colors.crust } },
+        " ",
+        { section = false },
+      }
     end, {
       events = { "ModeChanged", "CmdlineEnter" },
     }),

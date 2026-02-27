@@ -1,17 +1,10 @@
 -- basics ==========================================================================================
 vim.o.encoding = "utf-8"
 
-vim.o.title = true
-vim.o.titlestring = "%f · nvim"
-vim.o.errorbells = false
 vim.o.mouse = ""
 vim.o.exrc = true
 
 vim.o.shell = os.getenv("SHELL") or "/bin/sh"
-
--- set space as leader
-vim.g.mapleader = " "
-vim.g.maplocalleader = " m"
 
 vim.o.jumpoptions = "stack,view,clean"
 
@@ -36,8 +29,8 @@ vim.g.findprg = vim.fn.executable("fd") == 1 and "fd -H -p -t f --color=never --
 -- don't show the mode, since it's already in the status line
 vim.o.showmode = false
 vim.o.showcmd = false
-vim.o.showtabline = 2
-vim.o.cmdheight = 0
+vim.o.showtabline = 0
+vim.o.cmdheight = 1
 -- always show statusline at the bottom
 vim.o.laststatus = 3
 -- always show 1 column of sign column (gitsigns, etc.)
@@ -48,7 +41,6 @@ vim.opt.shortmess:append("sI")
 -- line numbers
 vim.o.number = true
 vim.o.relativenumber = false
-vim.o.numberwidth = 3
 
 vim.o.cursorline = false
 vim.o.cursorlineopt = "both"
@@ -57,24 +49,6 @@ vim.o.cursorlineopt = "both"
 vim.o.scrolloff = 0
 vim.o.sidescrolloff = 0
 vim.o.mousescroll = "ver:1,hor:1"
-
-vim.opt.fillchars:append({
-  fold = " ",
-  eob = "·",
-  diff = "─",
-  foldopen = "▼",
-  foldclose = "▶",
-})
-
-vim.o.list = true
-vim.opt.listchars:append({
-  eol = " ",
-  tab = "│ ",
-  trail = "-",
-  extends = "…",
-  precedes = "…",
-  nbsp = "␣",
-})
 
 -- split directions
 vim.o.splitbelow = true
@@ -99,7 +73,7 @@ vim.opt.wildoptions = { "pum", "tagfile" }
 vim.opt.wildmode = { "list", "full" }
 vim.o.complete = ""
 vim.opt.completeopt = { "menuone", "noinsert" }
-vim.o.autocomplete = true
+vim.o.autocomplete = false
 vim.opt.shortmess:append("c") -- don't show autocomplete messages
 
 -- editor config ===================================================================================

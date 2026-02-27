@@ -4,4 +4,5 @@ vim.lsp.enable({
   "gopls",
   "rust_analyzer",
   "bashls",
+  "color-lsp",
 })

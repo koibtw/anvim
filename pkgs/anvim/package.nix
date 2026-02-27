@@ -6,6 +6,7 @@
   fd,
   fzf,
   ripgrep,
+  color-lsp,
 
   wrapNeovim,
 
@@ -62,7 +63,6 @@ wrapNeovim {
       blink-cmp
 
       indent-blankline-nvim
-      nvim-colorizer-lua
 
       mini-icons
       mini-diff
@@ -77,5 +77,6 @@ wrapNeovim {
     fd
     fzf
     ripgrep
+    color-lsp
   ];
 }

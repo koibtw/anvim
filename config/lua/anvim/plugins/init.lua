@@ -26,11 +26,6 @@ return {
     event = "UIEnter",
   },
   {
-    "nvim-colorizer.lua",
-    name = "nvim-colorizer.lua",
-    event = "UIEnter",
-  },
-  {
     "mini.icons",
     name = "mini.icons",
   },

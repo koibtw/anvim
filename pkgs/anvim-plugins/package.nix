@@ -2,60 +2,60 @@
   lib,
   newScope,
   vimUtils,
-  callPackage,
 }:
 let
   inherit (lib) makeScope;
-  inherit (lib.trivial) importTOML;
-  inherit (builtins) mapAttrs fromJSON replaceStrings;
+  inherit (builtins)
+    mapAttrs
+    ;
 
-  toml = importTOML ./nvfetcher.toml;
-  sources = removeAttrs (callPackage ./_sources/generated.nix { }) [
-    "override"
-    "overrideDerivation"
-  ];
+  npins = import ./npins { };
+  sources = mapAttrs (
+    n: v:
+    let
+      src = v { };
+    in
+    {
+      inherit src;
+      passthru.as = n;
+    }
+  ) npins;
 
   mkPlugin =
     name: args:
     let
-      old = toml.${name};
+      oa = sources.${name};
 
-      args' = removeAttrs args [
-        "pname"
-        "date"
-        "version"
-        "passthru"
-      ];
+      passthru = args.passthru or { } // {
+        as = args.passthru.as or oa.passthru.as;
+        start = if (args ? passthru && args.passthru ? start) then args.passthru.start else false;
+      };
     in
     vimUtils.buildVimPlugin (
-      args'
+      oa
+      // args
       // {
-        pname = old.passthru.as or (baseNameOf old.src.git);
-        version = replaceStrings [ "-" ] [ "." ] args.date;
+        pname = args.pname or passthru.as;
+        version = "0-dev${oa.src.revision}";
 
         doCheck = false;
 
-        passthru = args.passthru or { } // {
-          start = if (args ? start) then fromJSON args.start else false;
-        };
+        inherit passthru;
       }
     );
 
-  generatedPlugins = mapAttrs mkPlugin sources;
+  generatedPlugins = mapAttrs (n: _: mkPlugin n { }) sources;
 
-  madePlugins = {
-    evergarden-nvim = mkPlugin "evergarden-nvim" (
-      sources.evergarden-nvim
-      // {
-        postInstall = ''
-          mkdir $target/.git
-          cat > $target/.git/HEAD <<EOF
-          ${sources.evergarden-nvim.src.rev}
-          EOF
-        '';
-      }
-    );
-  };
+  madePlugins =
+    let
+      start = {
+        passthru.start = true;
+      };
+    in
+    {
+      lynn = mkPlugin "lynn" start;
+      lspconfig = mkPlugin "lspconfig" start;
+    };
 
   plugins = generatedPlugins // madePlugins;
 in

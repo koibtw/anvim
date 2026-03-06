@@ -1,0 +1,74 @@
+{
+  "pins": {
+    "artio": {
+      "type": "Git",
+      "repository": {
+        "type": "Forgejo",
+        "server": "https://codeberg.org/",
+        "owner": "comfysage",
+        "repo": "artio.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "6cd5fedd649453b19186aa16d7af9ffa807b33c0",
+      "url": "https://codeberg.org/comfysage/artio.nvim/archive/6cd5fedd649453b19186aa16d7af9ffa807b33c0.tar.gz",
+      "hash": "sha256-5bxwn21cr0Dz9sJ9sg+A8UlzqqL12dv4H/vzolQFV7E="
+    },
+    "evergarden": {
+      "type": "Git",
+      "repository": {
+        "type": "Forgejo",
+        "server": "https://codeberg.org/",
+        "owner": "evergarden",
+        "repo": "nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "4f1345b359daa8f1f91bd562a60658994b478e11",
+      "url": "https://codeberg.org/evergarden/nvim/archive/4f1345b359daa8f1f91bd562a60658994b478e11.tar.gz",
+      "hash": "sha256-EPVMcFYafj44xyLZKKZYCLtZfLDm8tECccnKOz4uXyc="
+    },
+    "lspconfig": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "neovim",
+        "repo": "nvim-lspconfig"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "2b87d107942b9eebef768512f5849330335a9493",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/2b87d107942b9eebef768512f5849330335a9493.tar.gz",
+      "hash": "sha256-wX9FnI1HxLa6tg1PlDN+XYPu9t0ejUb0jyELOWupQ0U="
+    },
+    "lylla": {
+      "type": "Git",
+      "repository": {
+        "type": "Forgejo",
+        "server": "https://codeberg.org/",
+        "owner": "comfysage",
+        "repo": "lylla.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "aa4d3bcd3d4f29abedacdaabbd1369e3568af334",
+      "url": "https://codeberg.org/comfysage/lylla.nvim/archive/aa4d3bcd3d4f29abedacdaabbd1369e3568af334.tar.gz",
+      "hash": "sha256-8QDwMgDqFdjn8A5YnM0uQgWCmCg8ptUBcKdTLc3Fipk="
+    },
+    "lynn": {
+      "type": "Git",
+      "repository": {
+        "type": "Forgejo",
+        "server": "https://codeberg.org/",
+        "owner": "comfysage",
+        "repo": "lynn.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "1721a5a524b49232a367a3c9215adfa4e99644c4",
+      "url": "https://codeberg.org/comfysage/lynn.nvim/archive/1721a5a524b49232a367a3c9215adfa4e99644c4.tar.gz",
+      "hash": "sha256-tQ3vFI8iANLOnf97wF5H5uHnKWlarMTqNqexK06XRpQ="
+    }
+  },
+  "version": 7
+}

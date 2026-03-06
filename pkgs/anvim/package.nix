@@ -51,7 +51,6 @@ wrapNeovim {
 
   startPlugins = flatten [
     patrionedPlugins.start
-    vimPlugins.nvim-lspconfig
   ];
 
   optPlugins =

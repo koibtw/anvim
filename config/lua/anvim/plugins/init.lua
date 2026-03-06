@@ -4,14 +4,14 @@ return {
     lazy = false,
   },
   {
-    "lylla.nvim",
-    name = "lylla.nvim",
+    "lylla",
+    name = "lylla",
     lazy = false,
     deps = { "evergarden" },
   },
   {
-    "artio.nvim",
-    name = "artio.nvim",
+    "artio",
+    name = "artio",
     deps = { "mini.icons" },
     lazy = false,
   },

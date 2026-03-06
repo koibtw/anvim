@@ -54,6 +54,22 @@
         default = pkgs.callPackage ./nix/shell.nix { inherit pkgs; };
       });
 
+      apps = forAllSystems (pkgs: {
+        update = {
+          type = "app";
+          program = lib.getExe (
+            pkgs.writeShellApplication {
+              name = "update";
+              runtimeInputs = [ pkgs.npins ];
+
+              text = ''
+                (cd pkgs/anvim-plugins && npins update)
+              '';
+            }
+          );
+        };
+      });
+
       formatter = forAllSystems (pkgs: pkgs.callPackage ./nix/formatter.nix { inherit pkgs; });
     };
 }

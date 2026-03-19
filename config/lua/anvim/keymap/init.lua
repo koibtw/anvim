@@ -37,3 +37,9 @@ vim.keymap.set("n", "h", "g", opts)
 
 vim.keymap.set("n", "<C-,>", "<C-o>", opts)
 vim.keymap.set("n", "<C-.>", "<C-i>", opts)
+
+-- cool things =====================================================================================
+
+vim.keymap.set("n", "<leader>b", function ()
+  vim.api.nvim_paste("robin <comfysagedev" .. vim.fn.nr2char(64) .. "gmail.com>", false, -1)
+end)

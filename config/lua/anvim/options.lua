@@ -6,6 +6,9 @@ vim.o.exrc = true
 
 vim.o.shell = os.getenv("SHELL") or "/bin/sh"
 
+vim.g.mapleader = "\\"
+vim.g.maplocalleader = "\\"
+
 vim.o.jumpoptions = "stack,view,clean"
 
 vim.o.keywordprg = ":vertical botright help"

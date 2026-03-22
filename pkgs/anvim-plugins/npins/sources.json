@@ -10,9 +10,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "6cd5fedd649453b19186aa16d7af9ffa807b33c0",
-      "url": "https://codeberg.org/comfysage/artio.nvim/archive/6cd5fedd649453b19186aa16d7af9ffa807b33c0.tar.gz",
-      "hash": "sha256-5bxwn21cr0Dz9sJ9sg+A8UlzqqL12dv4H/vzolQFV7E="
+      "revision": "778448454ded399f773cde2e6e432c0c9558eebd",
+      "url": "https://codeberg.org/comfysage/artio.nvim/archive/778448454ded399f773cde2e6e432c0c9558eebd.tar.gz",
+      "hash": "sha256-74b9rhS4yOyw7gfEhsALEfNYVELjvfLBSvoOK8pd7ZI="
     },
     "evergarden": {
       "type": "Git",
@@ -24,9 +24,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "4f1345b359daa8f1f91bd562a60658994b478e11",
-      "url": "https://codeberg.org/evergarden/nvim/archive/4f1345b359daa8f1f91bd562a60658994b478e11.tar.gz",
-      "hash": "sha256-EPVMcFYafj44xyLZKKZYCLtZfLDm8tECccnKOz4uXyc="
+      "revision": "ded46a3eaaab08ffd9ba206bd7eff9e93598d2e5",
+      "url": "https://codeberg.org/evergarden/nvim/archive/ded46a3eaaab08ffd9ba206bd7eff9e93598d2e5.tar.gz",
+      "hash": "sha256-UEnor+FziURTnBKtDyMJPu3GzkdjEZ7XQyePsCA5HIY="
     },
     "lspconfig": {
       "type": "Git",
@@ -37,9 +37,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "2b87d107942b9eebef768512f5849330335a9493",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/2b87d107942b9eebef768512f5849330335a9493.tar.gz",
-      "hash": "sha256-wX9FnI1HxLa6tg1PlDN+XYPu9t0ejUb0jyELOWupQ0U="
+      "revision": "841c6d4139aedb8a3f2baf30cef5327371385b93",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/841c6d4139aedb8a3f2baf30cef5327371385b93.tar.gz",
+      "hash": "sha256-1wmf28UMTt0ZTD8w66OieP+YYkht3n4bOkoNa4dD6/0="
     },
     "lylla": {
       "type": "Git",
@@ -51,9 +51,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "aa4d3bcd3d4f29abedacdaabbd1369e3568af334",
-      "url": "https://codeberg.org/comfysage/lylla.nvim/archive/aa4d3bcd3d4f29abedacdaabbd1369e3568af334.tar.gz",
-      "hash": "sha256-8QDwMgDqFdjn8A5YnM0uQgWCmCg8ptUBcKdTLc3Fipk="
+      "revision": "261162694e4ee09a6b7f1dc6bfbecb28e0e54237",
+      "url": "https://codeberg.org/comfysage/lylla.nvim/archive/261162694e4ee09a6b7f1dc6bfbecb28e0e54237.tar.gz",
+      "hash": "sha256-shgDXsYsHEx+ZznEaewVLYVN0MPUdKHtNHx5AjBgL2I="
     },
     "lynn": {
       "type": "Git",
@@ -65,9 +65,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "1721a5a524b49232a367a3c9215adfa4e99644c4",
-      "url": "https://codeberg.org/comfysage/lynn.nvim/archive/1721a5a524b49232a367a3c9215adfa4e99644c4.tar.gz",
-      "hash": "sha256-tQ3vFI8iANLOnf97wF5H5uHnKWlarMTqNqexK06XRpQ="
+      "revision": "2552bddacaf3796c9e1c56dbb9b0e695a9240e0e",
+      "url": "https://codeberg.org/comfysage/lynn.nvim/archive/2552bddacaf3796c9e1c56dbb9b0e695a9240e0e.tar.gz",
+      "hash": "sha256-dpcNA/QODQx1x9KVsFkMPACHu/crKQGE4H1Ins+Qs18="
     }
   },
   "version": 7

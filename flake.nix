@@ -2,7 +2,7 @@
   description = "my neovim config :3";
 
   inputs = {
-    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
+    nixpkgs.url = "nixpkgs/nixos-unstable";
 
     gift-wrap = {
       url = "github:tgirlcloud/gift-wrap";

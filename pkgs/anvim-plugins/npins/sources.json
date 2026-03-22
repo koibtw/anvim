@@ -65,9 +65,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "2552bddacaf3796c9e1c56dbb9b0e695a9240e0e",
-      "url": "https://codeberg.org/comfysage/lynn.nvim/archive/2552bddacaf3796c9e1c56dbb9b0e695a9240e0e.tar.gz",
-      "hash": "sha256-dpcNA/QODQx1x9KVsFkMPACHu/crKQGE4H1Ins+Qs18="
+      "revision": "7c06a14fc037184ae71f59ab7c60a5cd36a7fa02",
+      "url": "https://codeberg.org/comfysage/lynn.nvim/archive/7c06a14fc037184ae71f59ab7c60a5cd36a7fa02.tar.gz",
+      "hash": "sha256-WjWtP6VTb0aFJy++p/gJG3UfH+2WhgOTCUMw5njDe94="
     }
   },
   "version": 7

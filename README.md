@@ -5,7 +5,7 @@ my neovim config :3 (nix is certified crazy)
 try it out with
 
 ```sh
-nix run git+https://codeberg.org/koibtw/anvim
+nix run git+https://git.koi.rip/koi/anvim
 ```
 
 ## Features

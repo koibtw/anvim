@@ -41,5 +41,18 @@ vim.keymap.set("n", "<C-.>", "<C-i>", opts)
 -- cool things ==================================================================================
 
 vim.keymap.set({ "n", "v" }, "<leader>b", function()
-  vim.api.nvim_paste("robin <comfysagedev" .. vim.fn.nr2char(64) .. "gmail.com>", false, -1)
-end)
+  local m = "robin <comfysagedev" .. vim.fn.nr2char(64) .. "gmail.com>"
+
+  if vim.api.nvim_get_mode().mode == "n" then
+    local i = vim.fn.getpos(".")[2] - 1
+    local line = vim.api.nvim_buf_get_lines(0, i, i + 1, true)[1]
+    local new, n = string.gsub(line, "^([^:]+:)%s*(.*)$", "%1 " .. m, 1)
+
+    if n > 0 then
+      vim.api.nvim_buf_set_lines(0, i, i + 1, true, { new })
+
+      return
+    end
+  end
+  vim.api.nvim_paste(m, false, -1)
+end, { noremap = true, silent = true, desc = "add boo:3" })

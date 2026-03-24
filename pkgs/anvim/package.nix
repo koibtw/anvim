@@ -8,6 +8,8 @@
   ripgrep,
   color-lsp,
 
+  tree-sitter,
+
   wrapNeovim,
 
   anvimPlugins,
@@ -40,6 +42,22 @@ let
     (filter isDerivation)
     partionPlugins
   ];
+
+  treesitterPlugins =
+    f:
+    let
+      inherit (vimPlugins.nvim-treesitter) builtGrammars grammarToPlugin;
+      selectedGrammars = f (tree-sitter.builtGrammars // builtGrammars);
+      grammarPlugins = map grammarToPlugin selectedGrammars;
+      queryPlugins = lib.pipe selectedGrammars [
+        (map (g: g.associatedQuery or null))
+        (lib.filter (q: q != null))
+      ];
+    in
+    grammarPlugins ++ queryPlugins;
+
+  grammars = import ./grammars.nix;
+  treesitterGrammars = treesitterPlugins (p: map (name: p.${name}) grammars);
 in
 wrapNeovim {
   pname = "anvim";
@@ -49,9 +67,12 @@ wrapNeovim {
 
   inherit basePackage;
 
-  startPlugins = flatten [
-    patrionedPlugins.start
-  ];
+  startPlugins = flatten (
+    [
+      patrionedPlugins.start
+    ]
+    ++ treesitterGrammars
+  );
 
   optPlugins =
     with vimPlugins;

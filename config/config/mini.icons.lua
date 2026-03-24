@@ -8,6 +8,7 @@ icons.setup({
   },
   file = {
     [".envrc"] = { glyph = "", hl = "MiniIconsYellow" },
+    ["init.lua"] = { glyph = "󰢱", hl = "MiniIconsAzure" },
     [".luacheckrc"] = "lua",
     [".Justfile"] = "justfile",
     [".justfile"] = "justfile",

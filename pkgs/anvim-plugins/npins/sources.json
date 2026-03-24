@@ -10,9 +10,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "778448454ded399f773cde2e6e432c0c9558eebd",
-      "url": "https://codeberg.org/comfysage/artio.nvim/archive/778448454ded399f773cde2e6e432c0c9558eebd.tar.gz",
-      "hash": "sha256-74b9rhS4yOyw7gfEhsALEfNYVELjvfLBSvoOK8pd7ZI="
+      "revision": "045c5b33a6012bf79a77c7858553075ca5f0bc56",
+      "url": "https://codeberg.org/comfysage/artio.nvim/archive/045c5b33a6012bf79a77c7858553075ca5f0bc56.tar.gz",
+      "hash": "sha256-h0NwcCVqf8Bitej8vDF4u1z/hqoNaLAKkSapdB7cvYY="
     },
     "evergarden": {
       "type": "Git",

@@ -1,4 +1,4 @@
--- basics ==========================================================================================
+-- basics =======================================================================================
 vim.o.encoding = "utf-8"
 
 vim.o.mouse = ""
@@ -22,12 +22,13 @@ vim.o.timeout = false
 -- decrease mapped sequence wait time
 vim.o.timeoutlen = 0
 
--- externals =======================================================================================
+-- externals ====================================================================================
 vim.o.grepprg = vim.fn.executable("rg") == 1 and "rg --vimgrep -. --" or "grep -rni --"
 vim.o.grepformat = "%f:%l:%c:%m"
-vim.g.findprg = vim.fn.executable("fd") == 1 and "fd -H -p -t f --color=never --" or "find . -type f -iregex '.*$*.*'"
+vim.g.findprg = vim.fn.executable("fd") == 1 and "fd -H -p -t f --color=never --"
+  or "find . -type f -iregex '.*$*.*'"
 
--- ui ==============================================================================================
+-- ui ===========================================================================================
 
 -- don't show the mode, since it's already in the status line
 vim.o.showmode = false
@@ -58,7 +59,7 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.splitkeep = "screen"
 
--- features ========================================================================================
+-- features =====================================================================================
 
 -- search settings
 vim.o.incsearch = true -- show search results while typing
@@ -79,7 +80,7 @@ vim.opt.completeopt = { "menuone", "noinsert" }
 vim.o.autocomplete = false
 vim.opt.shortmess:append("c") -- don't show autocomplete messages
 
--- editor config ===================================================================================
+-- editor config ================================================================================
 
 -- indentations settings
 vim.o.shiftwidth = 2
@@ -88,11 +89,15 @@ vim.o.softtabstop = 0 -- dont insert spaces on <tab>
 vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.smarttab = true
+
 -- enable break indent
 vim.o.breakindent = true
-vim.o.wrap = false
+vim.o.wrap = true
 
--- session state ===================================================================================
+-- default textwidth
+vim.o.textwidth = 97
+
+-- session state ================================================================================
 vim.o.swapfile = false
 vim.o.backup = false
 vim.o.writebackup = false
@@ -104,7 +109,7 @@ vim.o.sessionoptions = "help,tabpages,winsize"
 
 vim.g.rustfmt_autosave = 1
 
--- diagnostics =====================================================================================
+-- diagnostics ==================================================================================
 vim.diagnostic.config({
   signs = false,
   underline = true,

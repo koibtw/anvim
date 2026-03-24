@@ -1,6 +1,6 @@
 local opts = { noremap = true, silent = true }
 
--- general =========================================================================================
+-- general ======================================================================================
 
 vim.keymap.set("n", "<C-p>", "<cmd>_dP<cr>", opts)
 vim.keymap.set("n", "<C-t>", "<Plug>(artio-smart)", opts)
@@ -13,7 +13,7 @@ vim.keymap.set("n", "I", "<cmd>m .-2<cr>", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 vim.keymap.set("v", "<", "<gv", opts)
 
--- colemak =========================================================================================
+-- colemak ======================================================================================
 
 local mappings = {
   h = "n",
@@ -38,7 +38,7 @@ vim.keymap.set("n", "h", "g", opts)
 vim.keymap.set("n", "<C-,>", "<C-o>", opts)
 vim.keymap.set("n", "<C-.>", "<C-i>", opts)
 
--- cool things =====================================================================================
+-- cool things ==================================================================================
 
 vim.keymap.set("n", "<leader>b", function()
   vim.api.nvim_paste("robin <comfysagedev" .. vim.fn.nr2char(64) .. "gmail.com>", false, -1)

@@ -1,14 +1,12 @@
-{ pkgs }:
-
+{ mkShell, lua-language-server }:
 let
-  pkgInputs = with pkgs; [ lua-language-server ];
+  packages = [ lua-language-server ];
 in
-pkgs.mkShell {
-  packages = pkgInputs;
-
+mkShell {
+  inherit packages;
   shellHook = ''
     echo -ne "-----------------------------------\n "
-    echo -n "${toString (map (pkg: "• ${pkg.name}\n") pkgInputs)}"
+    echo -n "${toString (map (pkg: "• ${pkg.name}\n") packages)}"
     echo "-----------------------------------"
   '';
 }

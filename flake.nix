@@ -51,7 +51,7 @@
       homeManagerModules.default = import ./nix/hm-module.nix inputs;
 
       devShells = forAllSystems (pkgs: {
-        default = pkgs.callPackage ./nix/shell.nix { inherit pkgs; };
+        default = pkgs.callPackage ./nix/shell.nix { };
       });
 
       apps = forAllSystems (pkgs: {
@@ -70,6 +70,6 @@
         };
       });
 
-      formatter = forAllSystems (pkgs: pkgs.callPackage ./nix/formatter.nix { inherit pkgs; });
+      formatter = forAllSystems (pkgs: pkgs.callPackage ./nix/formatter.nix { });
     };
 }

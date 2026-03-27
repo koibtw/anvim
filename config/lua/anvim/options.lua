@@ -85,9 +85,7 @@ vim.opt.shortmess:append("c") -- don't show autocomplete messages
 -- indentations settings
 vim.o.shiftwidth = 2
 vim.o.tabstop = 2
-vim.o.softtabstop = 0 -- dont insert spaces on <tab>
 vim.o.expandtab = true
-vim.o.smartindent = true
 vim.o.smarttab = true
 
 -- enable break indent

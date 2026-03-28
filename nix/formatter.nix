@@ -20,6 +20,7 @@ treefmt.withConfig {
       stylua = {
         command = "stylua";
         includes = [ "*.lua" ];
+        excludes = [ "config/lua/anvim/treesitter/indent.lua" ];
       };
     };
   };

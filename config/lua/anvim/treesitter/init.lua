@@ -30,6 +30,7 @@ local start_filetypes = {
   "typescript",
   "vim",
   "yaml",
+  "zig",
 }
 
 vim.api.nvim_create_autocmd("FileType", {

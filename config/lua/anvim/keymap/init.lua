@@ -3,7 +3,9 @@ local opts = { noremap = true, silent = true }
 -- general ======================================================================================
 
 vim.keymap.set("n", "<C-p>", "<cmd>_dP<cr>", opts)
-vim.keymap.set("n", "<C-t>", function() require("artio.builtins").smart() end, opts)
+vim.keymap.set("n", "<C-t>", function()
+  require("artio.builtins").smart()
+end, opts)
 vim.keymap.set("n", "<Space>", "<Plug>(artio-grep)", opts)
 vim.keymap.set("n", "<F5>", vim.cmd.Undotree, opts)
 

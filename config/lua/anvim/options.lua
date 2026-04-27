@@ -41,7 +41,7 @@ vim.o.laststatus = 3
 vim.o.signcolumn = "yes:1"
 -- hide search notices, intro
 vim.opt.shortmess:append("sI")
-vim.opt.guicursor:append('a:Cursor/lCursor')
+vim.opt.guicursor:append("a:Cursor/lCursor")
 
 -- line numbers
 vim.o.number = true

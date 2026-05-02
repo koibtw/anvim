@@ -13,6 +13,7 @@ local start_filetypes = {
   "gomod",
   "gosum",
   "gotmpl",
+  "java",
   "javascript",
   "jq",
   "jsdoc",

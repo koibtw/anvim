@@ -1,4 +1,5 @@
 require("anvim.options")
+require("anvim.autocmd")
 require("anvim.lsp")
 require("anvim.keymap")
 require("anvim.treesitter")

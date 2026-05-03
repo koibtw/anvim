@@ -60,6 +60,9 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.splitkeep = "screen"
 
+vim.o.conceallevel = 2
+vim.o.concealcursor = ""
+
 -- features =====================================================================================
 
 -- search settings

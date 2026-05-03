@@ -15,6 +15,9 @@ vim.keymap.set("n", "I", "<cmd>m .-2<cr>", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 vim.keymap.set("v", "<", "<gv", opts)
 
+vim.keymap.set({ "i", "x" }, "<C-c>", "<C-[>")
+vim.keymap.set({ "i", "x" }, "<Esc>", "<C-c>")
+
 -- colemak ======================================================================================
 
 local mappings = {

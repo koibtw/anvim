@@ -39,6 +39,17 @@ vim.keymap.set("n", "h", "g", opts)
 vim.keymap.set("n", "<C-,>", "<C-o>", opts)
 vim.keymap.set("n", "<C-.>", "<C-i>", opts)
 
+-- window things ================================================================================
+
+vim.keymap.set("n", "<C-w>0", function ()
+  vim.o.winwidth = 20 -- default
+  vim.cmd [[wincmd=]]
+end, opts)
+
+vim.keymap.set("n", "<C-w>9", function ()
+  vim.o.winwidth = 999
+end, opts)
+
 -- cool things ==================================================================================
 
 vim.keymap.set({ "n", "v" }, "<leader>b", function()

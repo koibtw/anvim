@@ -1,19 +1,14 @@
 return {
-  {
-    "evergarden",
-    lazy = false,
-  },
+  { "evergarden" },
   {
     "lylla",
     name = "lylla",
-    lazy = false,
     deps = { "evergarden" },
   },
   {
     "artio",
     name = "artio",
     deps = { "mini.icons" },
-    lazy = false,
   },
   {
     "blink.cmp",
@@ -49,5 +44,6 @@ return {
     event = "FileType jule",
   },
 
-  { "nvim.undotree", event = "UIEnter" },
+  { "nvim.difftool" },
+  { "nvim.undotree" },
 }

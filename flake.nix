@@ -8,11 +8,6 @@
       url = "github:tgirlcloud/gift-wrap";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    neovim-nightly = {
-      url = "github:nix-community/neovim-nightly-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -25,17 +20,7 @@
       inherit (nixpkgs) lib;
       systems = lib.systems.flakeExposed;
 
-      forAllSystems =
-        f:
-        lib.genAttrs systems (
-          system:
-          f (
-            import nixpkgs {
-              inherit system;
-              overlays = [ inputs.neovim-nightly.overlays.default ];
-            }
-          )
-        );
+      forAllSystems = f: lib.genAttrs systems (system: f nixpkgs.legacyPackages.${system});
 
       mkPackages =
         default: pkgs:

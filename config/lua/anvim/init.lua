@@ -5,7 +5,19 @@ require("anvim.treesitter")
 
 -- ui2 ==========================================================================================
 
-require("vim._core.ui2").enable({ enable = true, msg = { target = "msg" } })
+require("vim._core.ui2").enable({
+  enable = true,
+  msg = {
+    targets = {
+      default = "msg",
+      bufwrite = "msg",
+      shell_cmd = "msg",
+      shell_err = "msg",
+      shell_out = "msg",
+      shell_ret = "msg",
+    },
+  },
+})
 
 -- lynn =========================================================================================
 

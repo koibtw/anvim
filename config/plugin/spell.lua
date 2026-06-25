@@ -20,3 +20,5 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.wo.spell = vim.tbl_contains(spell_filetypes, vim.bo[ev.buf].filetype)
   end
 })
+
+vim.api.nvim_set_hl(0, "SpellCap", {})

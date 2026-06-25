@@ -32,10 +32,7 @@ in
   };
 
   config = mkIf cfg.enable {
-    programs.anvim.package = pkgs'.anvim.override {
-      basePackage = inputs.neovim-nightly.packages.${pkgs.stdenv.hostPlatform.system}.neovim;
-    };
-
+    programs.anvim.package = pkgs'.anvim;
     home.packages = [ cfg.package ];
     home.sessionVariables = mkIf cfg.defaultEditor { EDITOR = "nvim"; };
   };
